@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website Landing Page</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+  
+   <section class="sec">
+     <header>
+       <a href="#"><img src="Logo.png" class="logo"></a>
+       <h1>Welcome to Pepsi Store</h1> 
+       <!----
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="Products.html">Products</a></li>
+      <li><a href="#">What's New</a></li>
+      <li><a href="#">Newsletter</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul> --->
+     </header> 
+
+    
+
+     <div class="content">
+        <div class="textBox">
+            <h2>That's What<br><span> I like</span></h2>
+              <p> Welcome to the exhilarating world of Pepsi! Dive into a refreshing 
+                journey where every sip is an explosion of taste and excitement. <br> At Pepsi Drink Website, 
+                we celebrate the joy of quenching your thirst with our iconic beverages. <br>
+                 From the classic Pepsi cola to the invigorating Mountain Dew, our lineup offers something for everyone. <br>
+                 Explore our range of flavors, discover new twists on old favorites, and unleash your inner fizz enthusiast. <br>
+                 Join us as we raise a glass to bold flavors, unforgettable moments, 
+                 and the unbeatable satisfaction that only Pepsi can deliver. <br> Take a sip, and let the adventure begin!</p>
+                                          
+             
+                    
+                    <div class="link">
+                     <a href="Signup.html">signUp</a>
+                 </div>
+                   
+
+        </div>
+        <div class="imgBox">
+           <img src="download.jpg" class="pepsi">
+        </div>
+     </div>
+     <ul class="thumb">
+        <li><img src="download.jpg" onclick="imgSlider('download.jpg');changeBgColor('#0062be')"></li>
+        <li><img src="s-pdpxl.jpg"  onclick="imgSlider('s-pdpxl.jpg');changeBgColor('#1e1e1e')"></li>
+      <li><img src ="down.jpg"   onclick="imgSlider('down.jpg');changeBgColor('#e60c2c')"></li>
+     </ul>
+
+      <div class="sci">
+      <a href="#"><img src="facebook.png"></i></a>
+      <a href="#"><img src="twitter.png"></i></a>
+      <a href="#"><img src="instagram.png"></i></a>
+      
+  </div>
+   </section>
+   <script type="text/javascript">
+   function imgSlider(anything){
+      document.querySelector('.pepsi').src = anything
+   }
+   function changeBgColor(color){
+      const sec = document.querySelector('.sec');
+      sec.style.background = color;
+   }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
